@@ -80,6 +80,15 @@ a {
     }
     .nav {
         li {
+            // Make the carat dropdown directly adjacent to the projects-navbar element
+            // ToDo: Make carat styled the same as projects-navbar with page-scroll (i.e. light color when in the right section)
+            // see here: https://www.sitepoint.com/scroll-based-animations-jquery-css3/#scroll-animation-examples
+            #projects-navbar {
+                padding-right: 0;
+            }
+            .dropdown-toggle {
+                padding-left: 0;
+            }
             a {
                 -webkit-transition: background .3s ease-in-out;
                 -moz-transition: background .3s ease-in-out;
