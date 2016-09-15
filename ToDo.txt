@@ -1,0 +1,1 @@
+Look into smoothState for nice page transitions :https://css-tricks.com/add-page-transitions-css-smoothstate-js/
