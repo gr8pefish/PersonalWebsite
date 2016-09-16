@@ -9,3 +9,4 @@ Get more images, i.e. check personal screensavers
     Give rights as needed for pictures
 Image for tab
 Fix google maps, broken on initial load (think it just takes a loooooong time) but fast once cached
+Check excessive filesizes of intro images causing long load time
