@@ -1,10 +1,10 @@
-#home-intro, .project-section, #college-intro, #project1-intro, #project2-intro, #project3-intro {
+#home-intro, .project-section, #college-intro {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover; }
 
-#home-intro, .project-section, #college-intro, #project1-intro, #project2-intro, #project3-intro {
+#home-intro, .project-section, #college-intro {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -24,7 +24,7 @@
   height: 200px;
   margin-top: 100px; }
 
-#home-intro, .project-section, #college-intro, #project1-intro, #project2-intro, #project3-intro {
+#home-intro, .project-section, #college-intro {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -33,20 +33,32 @@
 #college-intro {
   background: black url(../img/college-edited.jpg) no-repeat scroll bottom center; }
 
-#home-intro, .project-section, #college-intro, #project1-intro, #project2-intro, #project3-intro {
+#home-intro, .project-section, #college-intro {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover; }
 
 #project1-intro {
-  background: black url(../img/college-edited.jpg) no-repeat scroll bottom center; }
+  background: black url(../img/gears.jpg) no-repeat scroll bottom center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
 
 #project2-intro {
-  background: black url(../img/college-edited.jpg) no-repeat scroll bottom center; }
+  background: black url(../img/gears.jpg) no-repeat scroll bottom center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
 
 #project3-intro {
-  background: black url(../img/college-edited.jpg) no-repeat scroll bottom center; }
+  background: black url(../img/gears.jpg) no-repeat scroll bottom center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
 
 body {
   width: 100%;
