@@ -1,0 +1,18 @@
+//Projects page
+
+@import "../_placeholders";
+
+#project1-intro {
+  background: black url(../img/college-edited.jpg) no-repeat scroll bottom center;
+  @extend %background-cover;
+}
+
+#project2-intro {
+  background: black url(../img/college-edited.jpg) no-repeat scroll bottom center;
+  @extend %background-cover;
+}
+
+#project3-intro {
+  background: black url(../img/college-edited.jpg) no-repeat scroll bottom center;
+  @extend %background-cover;
+}

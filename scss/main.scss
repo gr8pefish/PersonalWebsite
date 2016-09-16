@@ -1,8 +1,9 @@
 @import "variables";
-@import "mixins";
+@import "placeholders";
 
 @import "pages/index";
 @import "pages/college";
+@import "pages/projects";
 
 
 //Overarching thematic elements
@@ -59,6 +60,37 @@ a {
     font-weight: 400;
 }
 
+//Intro
+.intro {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+    .intro-body {
+        display: table-cell;
+        vertical-align: middle;
+        .brand-heading {
+            font-size: 40px;
+        }
+        .intro-text {
+            font-size: 18px;
+        }
+    }
+    @media(min-width:768px) {
+        height: 100%;
+        padding: 0;
+        .intro-body {
+            .brand-heading {
+                font-size: 100px;
+            }
+            .intro-text {
+                font-size: 26px;
+            }
+        }
+    }
+}
 
 //Header
 .navbar-custom {
@@ -252,6 +284,8 @@ a {
 .content-section-small {
     padding-top: 400px;
 }
+
+
 
 @media(min-width:767px) {
     .content-section {
