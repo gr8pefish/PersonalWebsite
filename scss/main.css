@@ -10,6 +10,12 @@
   background-size: cover;
   -o-background-size: cover; }
 
+#projects-navbar {
+  padding-right: 0; }
+
+#dropdown-toggle-projects {
+  padding-left: 0; }
+
 #home-intro {
   background: black url(../img/intro-bg.jpg) no-repeat scroll bottom center; }
 
@@ -146,10 +152,6 @@ a {
       outline: none; }
   .navbar-custom a {
     color: white; }
-  .navbar-custom .nav li #projects-navbar {
-    padding-right: 0; }
-  .navbar-custom .nav li .dropdown-toggle {
-    padding-left: 0; }
   .navbar-custom .nav li .dropdown-menu {
     background-color: transparent; }
     .navbar-custom .nav li .dropdown-menu li a {

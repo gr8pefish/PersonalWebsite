@@ -2,6 +2,16 @@
 
 @import "../_placeholders";
 
+// Make the carat dropdown directly adjacent to the projects-navbar element
+// ToDo: Make carat styled the same as projects-navbar with page-scroll (i.e. light color when in the right section)
+// see here: https://www.sitepoint.com/scroll-based-animations-jquery-css3/#scroll-animation-examples
+#projects-navbar {
+  padding-right: 0;
+}
+#dropdown-toggle-projects {
+  padding-left: 0;
+}
+
 #home-intro {
   background: black url(../img/intro-bg.jpg) no-repeat scroll bottom center;
   @extend %background-cover;
