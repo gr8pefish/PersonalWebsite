@@ -51,6 +51,9 @@
                     <li>
                         <a class="page-scroll" href="#p2-content">Content</a>
                     </li>
+                    <li>
+                        <a class="page-scroll" href="#p2-form">Form</a>
+                    </li>
                     <li class="dropdown">
                         <a href="" class="dropdown-toggle" data-toggle="dropdown">Other Projects<b class="caret"></b></a>
                         <ul class="dropdown-menu">
@@ -87,13 +90,65 @@
         </div>
     </header>
 
-    <!-- Projects Section -->
+    <!-- Project Section -->
     <section id="p2-content" class="container content-section-small text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Content</h2>
-                <p>Hello! This is project 2</p>
-                <a href="project2.html" class="btn btn-default btn-md">Project 2</a>
+                <p>Hello! This is project 2. Enjoy the links.</p>
+                <p> Here is a wonderful <a href="#p2-form"> form </a> to fill out.</p>
+                <p> Check out this website's source code on <a href="https://github.com/gr8pefish/PersonalWebsite"> Github</a>.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section id="p2-form" class="content-section-medium text-center">
+        <div class="p2-form-row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <h3>Send me a Message</h3>
+                        <form name="sentMessage" id="contactForm" novalidate>
+                            <div class="control-group form-group">
+                                <div class="controls">
+                                    <label>Full Name:</label>
+                                    <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                                    <p class="help-block"></p>
+                                </div>
+                            </div>
+                            <div class="control-group form-group">
+                                <div class="controls">
+                                    <label>Phone Number:</label>
+                                    <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                </div>
+                            </div>
+                            <div class="control-group form-group">
+                                <div class="controls">
+                                    <label>Email Address:</label>
+                                    <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+                                </div>
+                            </div>
+                            <div class="control-group misc-group">
+                                <h7><label for="question">Question</label> <input type="radio" name="msg_type" id="question" value="question"></h7>
+                                <h7><label for="comment">Comment</label> <input type="radio" name="msg_type" id="comment" value="comment"></h7>
+                                <h7><label for="urgent">Urgent</label> <input type="radio" name="msg_type" id="urgent" value="urgent"></h7>
+                                <br>
+                                <h7><label for="reply">Send a reply please!</label> <input type="checkbox" name="reply" id="reply" value="reply"></h7>
+                                <br><br>
+                            </div>
+                            <div class="control-group form-group">
+                                <div class="controls">
+                                    <label>Message:</label>
+                                    <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+                                </div>
+                            </div>
+                            <div id="success"></div>
+                            <!-- For success/fail messages -->
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -114,6 +169,7 @@
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
+    <!--ToDo: Delete!-->
     <!-- Google Maps API Key - More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4lhrDzlCn3jJjMv62fakq8nwEyoXZpfY&sensor=false"></script>
 
