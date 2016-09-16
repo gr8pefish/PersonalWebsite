@@ -1,2 +1,3 @@
 Look into smoothState for nice page transitions: https://css-tricks.com/add-page-transitions-css-smoothstate-js/
 Look back into gulp: https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md
+Add section for highlighted projects
