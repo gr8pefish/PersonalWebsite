@@ -28,3 +28,15 @@
   -o-background-size: cover;
   //@extend %background-cover;
 }
+
+.p2-form-row {
+  width: 100%;
+  padding: 50px 0;
+  color: white;
+  background: black url(../img/waterfall.jpg) no-repeat scroll center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  //@extend %background-cover;
+}

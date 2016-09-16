@@ -66,6 +66,16 @@
   background-size: cover;
   -o-background-size: cover; }
 
+.p2-form-row {
+  width: 100%;
+  padding: 50px 0;
+  color: white;
+  background: black url(../img/waterfall.jpg) no-repeat scroll center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
+
 body {
   width: 100%;
   height: 100%;
@@ -259,7 +269,12 @@ a {
   padding-top: 100px; }
 
 .content-section-small {
-  padding-top: 400px; }
+  padding-top: 400px;
+  padding-bottom: 100px; }
+
+.content-section-medium {
+  padding-top: 200px;
+  padding-bottom: 100px; }
 
 @media (min-width: 767px) {
   .content-section {
