@@ -3,3 +3,4 @@ Look back into gulp: https://github.com/gulpjs/gulp/blob/master/docs/getting-sta
 Add section for highlighted projects
 Add place for resume
 Change pictures in homepage so it isn't so obviously based off template
+Add info button for CS212 pages as bad styling ahead
