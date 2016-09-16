@@ -4,3 +4,4 @@ Add section for highlighted projects
 Add place for resume
 Change pictures in homepage so it isn't so obviously based off template
 Fix scss _placeholders in _projects
+Get all images from MrSuicideSheep
