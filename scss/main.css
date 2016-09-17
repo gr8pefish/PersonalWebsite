@@ -59,13 +59,6 @@
   background-size: cover;
   -o-background-size: cover; }
 
-#project3-intro {
-  background: black url(../img/mountain-sky.jpg) no-repeat scroll bottom center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover; }
-
 .p2-form-row {
   width: 100%;
   padding: 50px 0;
@@ -75,6 +68,32 @@
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover; }
+
+#project3-intro {
+  background: black url(../img/mountain-sky.jpg) no-repeat scroll bottom center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
+
+#p3-relative {
+  position: relative;
+  left: 10px; }
+
+#p3-absolute {
+  top: 15px; }
+
+#behind-image {
+  width: 600px;
+  height: 50px;
+  position: absolute;
+  left: 10px;
+  top: 0;
+  z-index: -1; }
+
+#p3-resume .row .col-lg-8 {
+  background-color: whitesmoke;
+  color: slategray; }
 
 body {
   width: 100%;
