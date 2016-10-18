@@ -78,7 +78,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">Project 5</h1>
+                        <h1 class="brand-heading">Project 6</h1>
                         <p class="intro-text">A PHP powered email form.
                             <br>Scroll down for the form, scroll further for the output.</p>
                         <a href="#p2-form" class="btn btn-circle page-scroll">
@@ -90,64 +90,6 @@
         </div>
     </header>
 
-    <!--PHP Validation-->
-    <?php
-
-    // define error variables and set to empty values
-    $nameError = $emailError = $phoneError = $messageError = "";
-    // define varibale and set to empty values
-    $name = $email = $phone = $message = "";
-
-    //If posting correctly
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-        //Name checking
-        if (empty($_POST["name"])) {
-            $nameError = "Name is required!\n ";
-            } else {
-            $name = test_input($_POST["name"]);
-            // check if name only contains letters and whitespace
-            if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
-                $nameError = "Only letters and white space allowed";
-            }
-        }
-
-        //Phone number checking
-        if (empty($_POST["phone"])) {
-            $phoneError = "Phone Number is required!\n ";
-        } else {
-            $phone = test_input($_POST["phone"]);
-        }
-
-        //Email checking
-        if (empty($_POST["email"])) {
-            $emailError = "Email is required!\n ";
-            } else {
-            $email = test_input($_POST["email"]);
-            // check if e-mail address is well-formed
-            if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-                $emailError = "Invalid email format! ";
-            }
-        }
-
-        //Message checking
-        if (empty($_POST["message"])) {
-            $messageError = "Message is required!\n ";
-        } else {
-            $message = test_input($_POST["message"]);
-        }
-    }
-
-    //Removes special characters so it can easily be printed on the screen
-    function test_input($data) {
-        $data = trim($data);
-        $data = stripslashes($data);
-        $data = htmlspecialchars($data);
-        return $data;
-    }
-
-    ?>
-
     <!-- Form Section -->
     <section id="p2-form" class="content-section-medium text-center">
         <div class="p2-form-row">
@@ -155,25 +97,24 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <h3>Send me a Message</h3>
-                        <h7><span class="error">* = required field</span></h7><br><br>
-                        <form name="sentMessage" method="post" id="contactForm" novalidate action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>#p2-form">
+                        <form name="sentMessage" id="contactForm">
                             <div class="control-group form-group">
                                 <div class="controls">
-                                    <label><span class="error">* <?php echo $nameError;?></span>Full Name <i class="fa fa-user"></i></label>
-                                    <input type="text" class="form-control" id="name" name="name" required data-validation-required-message="Please enter your name.">
+                                    <label>Full Name <i class="fa fa-user"></i></label>
+                                    <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
                                     <p class="help-block"></p>
                                 </div>
                             </div>
                             <div class="control-group form-group">
                                 <div class="controls">
-                                    <label><span class="error">* <?php echo $phoneError;?></span>Phone Number <i class="fa fa-phone"></i></label>
-                                    <input type="tel" class="form-control" id="phone" name="phone" required data-validation-required-message="Please enter your phone number.">
+                                    <label>Phone Number <i class="fa fa-phone"></i></label>
+                                    <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
                                 </div>
                             </div>
                             <div class="control-group form-group">
                                 <div class="controls">
-                                    <label><span class="error">* <?php echo $emailError;?></span>Email Address <i class="fa fa-envelope-o"></i></label>
-                                    <input type="email" class="form-control" id="email" name="email" required data-validation-required-message="Please enter your email address.">
+                                    <label>Email Address <i class="fa fa-envelope-o"></i></label>
+                                    <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
                                 </div>
                             </div>
                             <div class="control-group misc-group">
@@ -186,8 +127,8 @@
                             </div>
                             <div class="control-group form-group">
                                 <div class="controls">
-                                    <label><span class="error">* <?php echo $messageError;?></span>Message:</label>
-                                    <textarea rows="10" cols="100" class="form-control" id="message" name="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+                                    <label>Message:</label>
+                                    <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
                                 </div>
                             </div>
                             <div id="success"></div>
@@ -199,18 +140,6 @@
             </div>
         </div>
     </section>
-
-    <?php
-    echo "<h2>Inputted data from previous (to be sent in Project 6):</h2>";
-    echo "<h7><br>Name: </h7>";
-    echo $name;
-    echo "<h7><br>Phone number: </h7>";
-    echo $phone;
-    echo "<h7><br>Email: </h7>";
-    echo $email;
-    echo "<h7><br>Message: </h7>";
-    echo $message;
-    ?>
 
     <!-- Footer -->
     <footer>
@@ -230,6 +159,11 @@
 
     <!-- Theme JavaScript -->
     <script src="../../../../../../js/main.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+    <script src="../../../../../../vendor/jquery/jqBootstrapValidation.js"></script>
+    <script src="../../../../../../js/contact_me.js"></script>
 
 </body>
 
