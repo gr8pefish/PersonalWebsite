@@ -3,7 +3,7 @@
 <link rel="stylesheet" type="text/css" href="defaultstyle.css"/>
 <link rel="stylesheet" type="text/css" href="loginstyle.css"/>
 <head>
-    <title>Log into A Metrosolaris Account</title>
+    <title>Log into An Account</title>
     <link rel="shortcut icon" href="images/skylineicon.ico" >
 </head>
 
