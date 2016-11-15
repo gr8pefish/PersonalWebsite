@@ -15,7 +15,8 @@
 
 <body>
 <div class = "container">
-    <div id = "headerpic">
+    <div id = "messageLink">
+        <p><a href="project8message.php">Messages</a></p>
     </div>
 
     <div id = "change_information">
